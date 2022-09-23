@@ -1,10 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ConsentManager } from '@segment/consent-manager';
 
 function App() {
   return (
     <div className="App">
+      <ConsentManager
+        writeKey=""
+        bannerContent={''}
+        cancelDialogContent={''}
+        preferencesDialogContent={''}
+      />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
